@@ -1,6 +1,6 @@
 // Controls
-var upKey = keyboard_check(vk_up);
-var downKey = keyboard_check(vk_down);
+var upKey = keyboard_check(ord("W"));
+var downKey = keyboard_check(ord("S"));
 
 // Move Direction
 var ySpeed = (downKey - upKey) * moveSpeed;
@@ -13,3 +13,7 @@ if place_meeting(x, y + ySpeed, obj_wall) == true
 
 // Position Calculation
 y += ySpeed;
+
+if keyboard_check_pressed(vk_space){
+	instance_create_layer(x, y, "Instances", obj_bullet);
+}
