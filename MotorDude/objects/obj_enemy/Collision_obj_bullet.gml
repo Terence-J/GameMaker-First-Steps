@@ -1,6 +1,6 @@
 // Destroy bullets
 instance_destroy(other);
-effect_create_above(ef_explosion,x ,y ,1 ,c_red);
+effect_create_above(ef_explosion,x ,y ,0 ,c_red);
 
 var moveTo_x = irandom_range(500, 600);
 
