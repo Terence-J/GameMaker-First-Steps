@@ -12,7 +12,7 @@ if (place_free(moveTo_x, y)){
 if instance_number(obj_enemy) < 15{
 	// Create new random coordinates
 	var new_x = irandom_range(560, 800);
-	var y_positions = [48, 64, 80, 96, 112];
+	var y_positions = [32, 48, 64, 80, 96];
     var new_y = y_positions[irandom(array_length(y_positions) - 1)];
 	
 	// Create new enemy

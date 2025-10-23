@@ -1,0 +1,1 @@
+obj_player.bullet_chamber = 2;
