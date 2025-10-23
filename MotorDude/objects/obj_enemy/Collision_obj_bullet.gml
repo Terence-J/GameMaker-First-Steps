@@ -5,10 +5,10 @@ effect_create_above(ef_explosion,x ,y ,1 ,c_red);
 x = irandom_range(500, 600);
 
 // Spawn new enemies
-if instance_number(obj_enemy) < 12{
+if instance_number(obj_enemy) < 15{
 	// Create new random coordinates
 	var new_x = irandom_range(560, 800);
-	var y_positions = [32, 64, 96];
+	var y_positions = [48, 64, 80, 96, 112];
     var new_y = y_positions[irandom(array_length(y_positions) - 1)];
 	
 	// Create new enemy

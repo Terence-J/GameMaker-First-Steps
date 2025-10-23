@@ -1,3 +1,3 @@
 // Move left
-speed = 1;
+speed = 2.5;
 direction = 180;
