@@ -6,9 +6,29 @@
 	  bullet.direction = dir;
     }
   
-    create_bullet(5);
-    create_bullet(0);
-    create_bullet(-5);
-	
+	if obj_game.points < 500{
+		create_bullet(5);
+		create_bullet(0);
+		create_bullet(-5);
+	}
+	else if obj_game.points < 1000{
+		create_bullet(10);
+		create_bullet(5);
+		create_bullet(0);
+		create_bullet(-5);
+		create_bullet(-10);
+	}
+	else if obj_game.points >= 1000{
+		create_bullet(15);
+		create_bullet(10);
+		create_bullet(5);
+		create_bullet(0);
+		create_bullet(-5);
+		create_bullet(-10);
+		create_bullet(-15);
+	}
+  
+  
+  
 	bullet_chamber -= 1;
 }

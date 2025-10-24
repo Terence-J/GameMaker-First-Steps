@@ -13,3 +13,6 @@ if place_meeting(x, y + ySpeed, obj_wall) == true
 
 // Position Calculation
 y += ySpeed;
+
+// Check the depth of the image
+depth = -bbox_bottom;
