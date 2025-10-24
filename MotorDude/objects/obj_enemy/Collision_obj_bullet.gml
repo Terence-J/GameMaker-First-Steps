@@ -5,8 +5,8 @@ obj_game.points += 10;
 instance_destroy(other);
 
 // Spawn new enemies
-if instance_number(obj_enemy) < max_enemies{
-	// Loop through it twice
+if instance_number(obj_enemy) < obj_game.max_enemies{
+	// Loop through it
 	for (var i = 0; i < 4; i += 1;){
 		// Create new random coordinates
 		var new_x = irandom_range(560, 800);
