@@ -1,5 +1,5 @@
   // Check if there are bullets in the chamber
-  if obj_game.bullet_chamber > 0{
+  if (obj_game.can_shoot && obj_game.bullet_chamber > 0){
     // Create a bullet template and set its direction
     var create_bullet = function(dir){
 	  var bullet = instance_create_layer(x, y-10, "Instances", obj_bullet);

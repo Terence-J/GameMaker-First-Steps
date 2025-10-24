@@ -57,6 +57,7 @@
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"id":{"name":"snd_annihilationNickPanek","path":"sounds/snd_annihilationNickPanek/snd_annihilationNickPanek.yy",},},
+    {"id":{"name":"snd_click","path":"sounds/snd_click/snd_click.yy",},},
     {"id":{"name":"snd_crash","path":"sounds/snd_crash/snd_crash.yy",},},
     {"id":{"name":"snd_impact","path":"sounds/snd_impact/snd_impact.yy",},},
     {"id":{"name":"snd_pDeath","path":"sounds/snd_pDeath/snd_pDeath.yy",},},
