@@ -6,29 +6,21 @@
 	  bullet.direction = dir;
     }
   
-	if obj_game.points < 500{
-		create_bullet(5);
-		create_bullet(0);
-		create_bullet(-5);
+	// Base spread value
+	var spread = 5;
+	
+	// Adapt spread value depending on score
+	if (obj_game.points >= 1000) {
+		spread = 15;
+	} 
+	else if (obj_game.points >= 500) {
+		spread = 10;
 	}
-	else if obj_game.points < 1000{
-		create_bullet(10);
-		create_bullet(5);
-		create_bullet(0);
-		create_bullet(-5);
-		create_bullet(-10);
+
+	// Loop to create bullets
+	for (var i = -spread; i <= spread; i += 5) {
+		create_bullet(i);
 	}
-	else if obj_game.points >= 1000{
-		create_bullet(15);
-		create_bullet(10);
-		create_bullet(5);
-		create_bullet(0);
-		create_bullet(-5);
-		create_bullet(-10);
-		create_bullet(-15);
-	}
-  
-  
-  
+ 
 	bullet_chamber -= 1;
 }
