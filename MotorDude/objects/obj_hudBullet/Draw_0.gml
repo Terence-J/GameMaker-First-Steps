@@ -6,4 +6,4 @@
 
     // Draw the bullet sprites
     draw_sprite(spr_hudBullet, frame1, 162, 0);
-    draw_sprite(spr_hudBullet, frame2, 194, 0);
+    draw_sprite(spr_hudBullet, frame2, 177, 0);
