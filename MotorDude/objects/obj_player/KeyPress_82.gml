@@ -1,1 +1,1 @@
-obj_player.bullet_chamber = 2;
+obj_game.bullet_chamber = 2;
