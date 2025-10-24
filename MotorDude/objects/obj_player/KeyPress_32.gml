@@ -23,4 +23,5 @@
 	}
  
 	obj_game.bullet_chamber -= 1;
+	audio_play_sound(snd_shoot, 0, false, 1, 0, random_range(0.9, 1.5));
 }

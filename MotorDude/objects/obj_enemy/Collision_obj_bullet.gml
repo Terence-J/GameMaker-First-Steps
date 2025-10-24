@@ -3,7 +3,6 @@ obj_game.points += 10;
 
 // Destroy bullets
 instance_destroy(other);
-effect_create_above(ef_explosion,x ,y ,0 ,c_red);
 
 // Spawn new enemies
 if instance_number(obj_enemy) < max_enemies{
@@ -22,4 +21,7 @@ if instance_number(obj_enemy) < max_enemies{
 	}
 }
 
-instance_destroy();	
+// Handle enemy death
+effect_create_above(ef_explosion, x, y + 10, 0, c_red);
+audio_play_sound(snd_impact, 0, false, 1.5, 0, random_range(0.8, 1.3));
+instance_destroy();
